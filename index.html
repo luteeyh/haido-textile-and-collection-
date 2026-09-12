@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAIDO TEXTILE AND COLLECTION</title>
+  <meta name="description" content="HAIDO TEXTILE AND COLLECTION — clothes, shoes, glasses and more in Birnin Kebbi, Kebbi State.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home">
+      <img src="logo.png" alt="HAIDO Textile & Collection logo">
+      <span>HAIDO TEXTILE<br><small>AND COLLECTION</small></span>
+    </a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">WELCOME TO HAIDO</p>
+        <h1>Style that speaks<br><em>for you.</em></h1>
+        <p class="lead">Discover quality clothes, shoes, glasses and more — carefully selected for your everyday style.</p>
+        <div class="actions">
+          <a class="btn primary" href="#collections">Explore Collection</a>
+          <a class="btn secondary" href="https://wa.me/2348108087018?text=Hello%20HAIDO%20TEXTILE%20AND%20COLLECTION%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="logo.png" alt="HAIDO Textile & Collection">
+        <div>
+          <strong>HAIDO</strong>
+          <span>TEXTILE & COLLECTION</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="section">
+      <div class="section-head">
+        <p class="eyebrow">OUR COLLECTIONS</p>
+        <h2>Find your style</h2>
+        <p>Browse our main categories. Send us a WhatsApp message for available items, sizes and prices.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">👔</div>
+          <h3>Clothes</h3>
+          <p>Fashionable clothing for different occasions and personal styles.</p>
+          <a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20I%27m%20interested%20in%20your%20clothes." target="_blank" rel="noopener">Ask about clothes →</a>
+        </article>
+        <article class="card">
+          <div class="icon">👞</div>
+          <h3>Shoes</h3>
+          <p>Step out confidently with our selection of shoes and footwear.</p>
+          <a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20I%27m%20interested%20in%20your%20shoes." target="_blank" rel="noopener">Ask about shoes →</a>
+        </article>
+        <article class="card">
+          <div class="icon">🕶️</div>
+          <h3>Glasses</h3>
+          <p>Complete your look with stylish glasses and accessories.</p>
+          <a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20I%27m%20interested%20in%20your%20glasses." target="_blank" rel="noopener">Ask about glasses →</a>
+        </article>
+        <article class="card">
+          <div class="icon">✨</div>
+          <h3>More</h3>
+          <p>More fashion pieces and collections are available in-store.</p>
+          <a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20what%20other%20items%20do%20you%20have%20available%3F" target="_blank" rel="noopener">See more →</a>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="shop" class="section shop">
+      <div class="section-head">
+        <p class="eyebrow">SHOP ONLINE</p>
+        <h2>Shop HAIDO</h2>
+        <p>Browse our collection and tap WhatsApp to ask about availability, size, colour and delivery.</p>
+      </div>
+      <div class="shop-tools">
+        <button class="filter active" onclick="filterProducts('all', this)">All</button>
+        <button class="filter" onclick="filterProducts('shoes', this)">Shoes</button>
+        <button class="filter" onclick="filterProducts('clothes', this)">Clothes</button>
+        <button class="filter" onclick="filterProducts('fabric', this)">Fabrics</button>
+        <button class="filter" onclick="filterProducts('accessories', this)">Accessories</button>
+      </div>
+      <div class="products">
+        <article class="product" data-category="shoes"><img class="product-photo real" src="black-sandals.jpeg" alt="Black sandals"><div class="product-info"><span>Shoes</span><h3>Black Leather Sandals</h3><p class="price">₦17,000</p><a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20I%27m%20interested%20in%20the%20Black%20Leather%20Sandals%20for%20%E2%82%A617%2C000." target="_blank" rel="noopener">Order on WhatsApp →</a></div></article>
+        <article class="product" data-category="shoes"><img class="product-photo real" src="brown-sandals.jpeg" alt="Brown sandals"><div class="product-info"><span>Shoes</span><h3>Brown Leather Sandals</h3><p class="price">₦10,000</p><a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20I%27m%20interested%20in%20the%20Brown%20Leather%20Sandals%20for%20%E2%82%A610%2C000." target="_blank" rel="noopener">Order on WhatsApp →</a></div></article>
+        <article class="product" data-category="clothes"><img class="product-photo real" src="black-kaftan.jpeg" alt="Black traditional kaftan"><div class="product-info"><span>Clothes</span><h3>Black Traditional Kaftan</h3><p class="price">Price on request</p><a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20I%27m%20interested%20in%20the%20Black%20Traditional%20Kaftan." target="_blank" rel="noopener">Ask for price →</a></div></article>
+        <article class="product" data-category="fabric"><img class="product-photo real" src="premium-fabric-set.jpeg" alt="Premium fabric selection"><div class="product-info"><span>Fabrics</span><h3>Premium Fabric Selection</h3><p class="price">Price on request</p><a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20I%27m%20interested%20in%20the%20Premium%20Fabric%20Selection." target="_blank" rel="noopener">Ask for price →</a></div></article>
+        <article class="product" data-category="fabric"><img class="product-photo real" src="noble-thinker-fabric.jpeg" alt="Noble Thinker fabric collection"><div class="product-info"><span>Fabrics</span><h3>Noble Thinker Collection</h3><p class="price">Price on request</p><a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20I%27m%20interested%20in%20the%20Noble%20Thinker%20fabric%20collection." target="_blank" rel="noopener">Ask for price →</a></div></article>
+        <article class="product" data-category="shoes"><img class="product-photo real" src="sandals-display.jpeg" alt="Sandals collection in store"><div class="product-info"><span>Shoes</span><h3>Sandals Collection</h3><p class="price">Various prices</p><a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20please%20show%20me%20your%20available%20sandals%20and%20prices." target="_blank" rel="noopener">See available pairs →</a></div></article>
+        <article class="product" data-category="accessories"><img class="product-photo real" src="watches.jpeg" alt="Watch collection"><div class="product-info"><span>Accessories</span><h3>Watches</h3><p class="price">Price on request</p><a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20I%27m%20interested%20in%20your%20watches." target="_blank" rel="noopener">Ask about watches →</a></div></article>
+        <article class="product" data-category="accessories"><img class="product-photo real" src="glasses.jpeg" alt="Glasses collection"><div class="product-info"><span>Accessories</span><h3>Glasses</h3><p class="price">Price on request</p><a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20I%27m%20interested%20in%20your%20glasses." target="_blank" rel="noopener">Ask about glasses →</a></div></article>
+        <article class="product" data-category="accessories"><img class="product-photo real" src="caps-collection.jpeg" alt="Patterned caps"><div class="product-info"><span>Accessories</span><h3>Patterned Caps</h3><p class="price">Price on request</p><a href="https://wa.me/2348108087018?text=Hello%20HAIDO%2C%20I%27m%20interested%20in%20your%20patterned%20caps." target="_blank" rel="noopener">Ask about caps →</a></div></article>
+      </div>
+    </section>
+    <section class="gallery section">
+      <div class="section-head"><p class="eyebrow">HAIDO LOOKBOOK</p><h2>See the HAIDO style.</h2><p>More photos from our collection and store.</p></div>
+      <div class="gallery-grid">
+        <img src="customer-style.jpeg" alt="HAIDO style lookbook">
+        <img src="sandals-display.jpeg" alt="HAIDO footwear display">
+        <img src="glasses.jpeg" alt="HAIDO glasses display">
+        <img src="watches.jpeg" alt="HAIDO watches display">
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <p class="eyebrow">ABOUT HAIDO</p>
+        <h2>Your fashion destination in Birnin Kebbi.</h2>
+      </div>
+      <p>HAIDO TEXTILE AND COLLECTION brings clothes, shoes, glasses and more together in one place. Visit us near Zenith Bank, Birnin Kebbi, Kebbi State, or contact us directly for enquiries and available products.</p>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="section-head">
+        <p class="eyebrow">CONTACT US</p>
+        <h2>Let's help you find what you need.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-box">
+          <span>📍</span>
+          <div><strong>Visit us</strong><p>Near Zenith Bank<br>Birnin Kebbi, Kebbi State, Nigeria</p></div>
+        </div>
+        <div class="contact-box">
+          <span>📞</span>
+          <div><strong>Call us</strong><p><a href="tel:+2348108087018">08108087018</a><br><a href="tel:+2348108086426">08108086426</a></p></div>
+        </div>
+        <div class="contact-box">
+          <span>💬</span>
+          <div><strong>WhatsApp</strong><p><a href="https://wa.me/2348108087018" target="_blank" rel="noopener">Message us on WhatsApp</a></p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="float-wa" href="https://wa.me/2348108087018?text=Hello%20HAIDO%20TEXTILE%20AND%20COLLECTION%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Chat with HAIDO on WhatsApp">💬</a>
+
+  <footer>
+    <img src="logo.png" alt="HAIDO logo">
+    <p>© 2026 HAIDO TEXTILE AND COLLECTION. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function filterProducts(category, button) {
+      document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
+      button.classList.add('active');
+      document.querySelectorAll('.product').forEach(card => {
+        card.style.display = (category === 'all' || card.dataset.category === category) ? '' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
